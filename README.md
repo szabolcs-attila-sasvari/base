@@ -1,6 +1,6 @@
 # Train Speed Controller
 
-This is a sample application for the verification laboratory.
+##### **This is a sample application for the <ins>verification laboratory.</ins>, and I have added new comments.**
 
 ## Getting started
 
