@@ -8,12 +8,16 @@ import hu.bme.mit.train.interfaces.TrainController;
 import hu.bme.mit.train.interfaces.TrainSensor;
 import hu.bme.mit.train.interfaces.TrainUser;
 import hu.bme.mit.train.system.TrainSystem;
+import hu.bme.mit.train.sensor.TrainAeb;
 
 public class TrainSystemTest {
 
 	TrainController controller;
 	TrainSensor sensor;
 	TrainUser user;
+
+    public TrainAeb tai;
+
 	
 	@Before
 	public void before() {
@@ -23,6 +27,9 @@ public class TrainSystemTest {
 		user = system.getUser();
 
 		sensor.overrideSpeedLimit(50);
+
+
+        tai = new TrainAeb(controller);
 	}
 	
 	@Test
@@ -50,5 +57,9 @@ public class TrainSystemTest {
 		Assert.assertEquals(0, controller.getReferenceSpeed());
 	}
 
+    @Test
+    public void ThisIsAnExampleTestStub() {
+        tai.emergencyBrake();
+    }
 	
 }
