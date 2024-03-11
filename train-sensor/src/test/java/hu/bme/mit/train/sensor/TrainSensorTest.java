@@ -7,13 +7,17 @@ import static org.mockito.Mockito.*;
 
 public class TrainSensorTest {
 
-    @Before
-    public void before() {
-        // TODO Add initializations
-    }
+    // public TrainController tsi;
+    // public TrainAeb tai;
 
-    @Test
-    public void ThisIsAnExampleTestStub() {
-        // TODO Delete this and add test cases based on the issues
-    }
+    // @Before
+    // public void before() {
+    //     tsi = new TrainController();
+    //     tai = new TrainAeb(tsi);
+    // }
+
+    // @Test
+    // public void ThisIsAnExampleTestStub() {
+    //     tai.emergencyBrake();
+    // }
 }
