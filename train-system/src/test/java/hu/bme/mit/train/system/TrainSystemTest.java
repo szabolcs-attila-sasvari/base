@@ -12,6 +12,7 @@ import hu.bme.mit.train.sensor.TrainAeb;
 
 public class TrainSystemTest {
 
+	// MODIFICATION B
 	TrainController controller;
 	TrainSensor sensor;
 	TrainUser user;
