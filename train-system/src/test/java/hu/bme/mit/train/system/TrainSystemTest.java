@@ -9,6 +9,10 @@ import hu.bme.mit.train.interfaces.TrainSensor;
 import hu.bme.mit.train.interfaces.TrainUser;
 import hu.bme.mit.train.system.TrainSystem;
 
+
+import com.google.common.collect.Table;
+import com.google.common.collect.HashBasedTable;
+
 public class TrainSystemTest {
 
 	TrainController controller;
@@ -54,6 +58,20 @@ public class TrainSystemTest {
     @Test
     public void ThisIsAnExampleTestStub() {
 		controller.emergencyBrake();
+    }
+
+
+	@Test
+    public void givenTable_whenContains_returnsSuccessfully() {
+        Integer l2 = sensor.isIncreased();
+		
+		sensor.putData(11, 12, 13);
+		sensor.putData(21, 22, 23);
+		sensor.putData(31, 32, 33);
+
+        Integer l3 = sensor.isIncreased();
+
+        Assert.assertTrue(l3 > l2);
     }
 	
 }
