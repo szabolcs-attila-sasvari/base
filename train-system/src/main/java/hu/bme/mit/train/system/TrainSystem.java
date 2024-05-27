@@ -26,7 +26,7 @@ public class TrainSystem {
         // Define your task as a Runnable
         Runnable yourTask = () -> {
             // Your task logic here
-            user.overrideJoystickPosition(user.getJoystickPosition() + 1);
+            user.overrideJoystickPosition(user.getJoystickPosition());
 			controller.followSpeed();
         };
 
